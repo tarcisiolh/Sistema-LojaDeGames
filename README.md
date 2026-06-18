@@ -14,9 +14,13 @@ Link para acesso: https://drive.google.com/file/d/1ZcCxa3mVieWcdaBfNZIEWY_UkYkmO
 
 
 ## Declaração de Uso de IA
+
 Utilizei IA como ferramenta de apoio.
+
 Ferramenta(s): Gemini Pro 3.1
+
 Finalidade: Revisão dos códigos e esclarecimento de dúvidas, principalmente na realização do UML.
+
 Validação: Declaro que todo o código gerado foi lido, testado e e ajustado conforme as
 necessidades específicas do projeto e da disciplina. A responsabilidade pela arquitetura,
 decisões de design e correção do código é de minha total responsabilidade.
