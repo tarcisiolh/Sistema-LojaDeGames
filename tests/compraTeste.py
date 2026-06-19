@@ -17,7 +17,6 @@ jogo_venda = FactoryJogo.criarJogo(
     garantia="19/11/2027"
 )
 
-#Compra com Desconto via PIX
 compra_pix = Compra(
     data_pagamento="11/06/2026",
     forma_pagamento="pix",
@@ -25,7 +24,6 @@ compra_pix = Compra(
     estrategia_desconto=DescontoPIX()
 )
 
-#Compra com Desconto Promocional
 compra_promo = Compra(
     data_pagamento="19/06/2026",
     forma_pagamento="crédito",
@@ -33,7 +31,6 @@ compra_promo = Compra(
     estrategia_desconto=DescontoPromocional()
 )
 
-#Compra sem Desconto
 compra_sdesc = Compra(
     data_pagamento="19/06/2026",
     forma_pagamento="crédito",
