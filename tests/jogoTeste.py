@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.FactoryJogo import FactoryJogo
 #https://www.igdb.com/
 print("Criando Jogo para Aluguel via Factory")
