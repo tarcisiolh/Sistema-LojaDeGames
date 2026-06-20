@@ -18,6 +18,9 @@ class JogoAlugado(Jogo):
     def exibir_dados(self):
         super().exibir_dados()
         print(f"Preço por dia: R$ {self.preco_por_dia:.2f}")
+        
+    def __str__(self):
+        return super().__str__() + f"\nPreço por dia: R$ {self.preco_por_dia:.2f}"
 
     def obter_preco(self):
         return self.preco_por_dia

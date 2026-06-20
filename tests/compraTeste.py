@@ -2,7 +2,7 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.FactoryJogo import FactoryJogo
 from models.compra import Compra
-from models.StrategyDesconto import DescontoPIX, DescontoPromocional, SemDesconto
+from models.StrategyDesconto import DescontoPIX, DescontoPromocional
 
 jogo_venda = FactoryJogo.criarJogo(
     tipo="venda",
@@ -34,15 +34,14 @@ compra_promo = Compra(
 compra_sdesc = Compra(
     data_pagamento="19/06/2026",
     forma_pagamento="crédito",
-    jogo_comprado=jogo_venda,
-    estrategia_desconto=SemDesconto()
+    jogo_comprado=jogo_venda
 )
 
 compra_pix.exibir_dados()
-print(f"Total a pagar (com 5% de desconto): R$ {compra_pix.calcular_total():.2f}\n")
+print(f"\nTotal a pagar (com 5% de desconto): R$ {compra_pix.calcular_total():.2f}\n")
 
 compra_promo.exibir_dados()
-print(f"Total a pagar (com 12% de desconto): R$ {compra_promo.calcular_total():.2f}")
+print(f"\nTotal a pagar (com 12% de desconto): R$ {compra_promo.calcular_total():.2f}")
 
 compra_sdesc.exibir_dados()
-print(f"Total a pagar (sem desconto): R$ {compra_sdesc.calcular_total():.2f}")
+print(f"\nTotal a pagar (sem desconto): R$ {compra_sdesc.calcular_total():.2f}")

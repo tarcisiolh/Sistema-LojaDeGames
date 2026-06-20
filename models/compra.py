@@ -50,7 +50,7 @@ class Compra:
         if not isinstance(jogo, JogoVenda):
             raise ValueError("O jogo comprado deve primeiramente existir.")
         self.__jogo_comprado = jogo
-        self.__jogo_comprado.estoque-=1
+        self.jogo_comprado.atualizar_estoque(-1)
 
     @estrategia_desconto.setter
     def estrategia_desconto(self, estrategia: StrategyDesconto):

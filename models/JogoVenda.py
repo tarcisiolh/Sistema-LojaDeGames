@@ -37,5 +37,8 @@ class JogoVenda(Jogo):
         data_formatada = self.garantia.strftime("%d/%m/%Y")
         print(f"Preço: R$ {self.preco:.2f}\nGarantia: {data_formatada}")
 
+    def __str__(self):
+        return super().__str__() + f"\nPreço: R$ {self.preco:.2f}\nGarantia: {self.garantia.strftime('%d/%m/%Y')}"
+    
     def obter_preco(self):
         return self.preco
