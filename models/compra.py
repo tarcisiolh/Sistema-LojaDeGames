@@ -65,4 +65,4 @@ class Compra:
 
     def exibir_dados(self):
         nome_desconto = self.estrategia_desconto.__class__.__name__
-        print(f"Data Pagamento: {self.data_pagamento}\nForma de Pagamento: {self.forma_pagamento.capitalize()}\nJogo Comprado: {self.jogo_comprado}\nDesconto Aplicado: {nome_desconto}")
+        print(f"Data Pagamento: {self.data_pagamento}\nForma de Pagamento: {self.forma_pagamento.capitalize()}\nJogo Comprado: {self.jogo_comprado}\nDesconto Aplicado: {nome_desconto}\nValor Total Pago: R$ {self.calcular_total():.2f}")

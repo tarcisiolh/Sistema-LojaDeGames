@@ -66,7 +66,7 @@ class Aluga:
         self.jogo_alugado.atualizar_estoque(-1)
     
     def exibir_dados(self):
-        print(f"Data de início: {self.data_inicio}\nData de fim: {self.data_fim}\nForma de Pagamento: {self.forma_pagamento.capitalize()}\nJogo Alugado: {self.jogo_alugado}\n")
+        print(f"Data de início: {self.data_inicio}\nData de fim: {self.data_fim}\nForma de Pagamento: {self.forma_pagamento.capitalize()}\nJogo Alugado: {self.jogo_alugado}\nValor Total do Aluguel: R$ {self.calcular_valor():.2f}")
 
     def calcular_valor(self):
         periodo = (self.data_fim - self.data_inicio).days
