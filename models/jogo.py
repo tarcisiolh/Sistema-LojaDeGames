@@ -91,7 +91,8 @@ class Jogo(ABC):
         self.__plataforma = novaPlataforma.strip()
 
     def __str__(self):
-        return f"Nome: {self.nome}\nGenero: {self.genero}\nClassificação: {self.classfIndicativa}\nLançamento: {self.data_lancamento}\nDesenvolvedora: {self.desenvolvedora}\nEstoque: {self.estoque}\nPlataforma: {self.plataforma}"
+        data_formatada = self.data_lancamento.strftime("%d/%m/%Y")
+        return f"Nome: {self.nome}\nGenero: {self.genero}\nClassificação: {self.classfIndicativa}\nLançamento: {data_formatada}\nDesenvolvedora: {self.desenvolvedora}\nEstoque: {self.estoque}\nPlataforma: {self.plataforma}"
 
     def __eq__(self, other):
         if not isinstance(other, Jogo):
@@ -99,7 +100,8 @@ class Jogo(ABC):
         return self.nome == other.nome and self.desenvolvedora == other.desenvolvedora and self.data_lancamento == other.data_lancamento
     
     def exibir_dados(self):
-        print(f"Nome: {self.nome}\nGenero: {self.genero}\nClassificação: {self.classfIndicativa}\nLançamento: {self.data_lancamento}\nDesenvolvedora: {self.desenvolvedora}\nEstoque: {self.estoque}\nPlataforma: {self.plataforma}")
+        data_formatada = self.data_lancamento.strftime("%d/%m/%Y")
+        print(f"Nome: {self.nome}\nGenero: {self.genero}\nClassificação: {self.classfIndicativa}\nLançamento: {data_formatada}\nDesenvolvedora: {self.desenvolvedora}\nEstoque: {self.estoque}\nPlataforma: {self.plataforma}")
 
     def atualizar_estoque(self, quantidade):
         self.estoque += quantidade
