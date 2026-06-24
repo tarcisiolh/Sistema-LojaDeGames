@@ -58,7 +58,7 @@ Em uma compra, o cálculo do valor final variava de acordo com a forma de pagame
 Então, foi criada uma interface base StrategyDesconto. A partir dela, diferentes strategies foram implementadas em classes separadas: SemDesconto, DescontoPIX (5% de desconto) e DescontoPromocional (12% de desconto). A classe Compra apenas recebe a estratégia escolhida no momento do pagamento e chama o método calcular_desconto(), sem precisar saber como a matemática é feita.
 <br><br><br>
 
-## Instruções para execução
+# Instruções para execução
 
 O main.py foi designado como um menu, então a instanciação de todas as classes pode ser feita diretamente pelas opções presente nele.
 
@@ -77,14 +77,14 @@ Caso alguma inserção seja feita de forma errada, a partir de um while o sistem
 Já que o sistema foi implementado pouco a pouco, a pasta tests são testes básicos de instanciação de classes que fui utilizando ao decorrer da criação do trabalho, recomendo usar o main.
 <br><br><br>
 
-## Detalhamento do Aprendizado
+# Detalhamento do Aprendizado
 
 - Dificuldades encontradas: Não tive muitas, maior parte do que foi utilizado nesse sistema foi anteriormente explicado no trabalho feito em aula sobre RPG. Sendo incisivo, tive dificuldade com a criação do UML e com as sintaxes dos Padrões de Projeto. Eu mesmo durante a realização do factory aponto no código que eu não fui na aula no dia e não sabia sobre kwargs.
 - Como resolvi: Eu utilizei a IA para sanar minhas dúvidas e também pesquisei sobre essa parte do factory, como também fiz para a implementação do Strategy, que após ler umm artigo da alura sobre design patterns, decidi usar.
 - Principal Aprendizado: Acredito que consegui entender melhor a realização de um UML e como as design patterns também fazem parte e alteram ele. Também acredito que sei aplicar agora o Factory e o Strategy facilmente.
 
 <br><br><br>
-## Declaração de Uso de IA
+# Declaração de Uso de IA
 
 Utilizei IA como ferramenta de apoio.
 
