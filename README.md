@@ -72,7 +72,7 @@ O menu tem como funções:
 
 Recomenda-se cadastrar um cliente e um jogo primeiro para poder testar o resto das opções. Ao realizar a compra ou aluguel do jogo criado, ele aparecerá junto dos dados do cliente na opção de consulta de histórico.
 
-Caso alguma inserção seja feita de forma errada, a partir de um while o sistema pede novamente a inserção, mostrando onde o usuário errou ao usar o própio sistema de setters de cada atributo.
+Caso alguma inserção seja feita de forma errada, a partir de um while o sistema pede novamente a inserção, mostrando onde o usuário errou ao usar o próprio sistema de setters de cada atributo.
 
 Já que o sistema foi implementado pouco a pouco, a pasta tests são testes básicos de instanciação de classes que fui utilizando ao decorrer da criação do trabalho, recomendo usar o main.
 <br><br><br>
